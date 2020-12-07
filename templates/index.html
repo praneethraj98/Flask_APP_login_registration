@@ -1,0 +1,9 @@
+{% extends "base_layout.html"%}
+{% block content %}
+<h1 class="text-center p-5 m-5">Welcome {{session.name}}</h1>
+<h3 class="text-center">This is your dashboard</h3>
+<br><br><br><br><br>
+<a href="{{ url_for('home') }}">
+    <h2 class=".text-white text-center">Click here to LOGOUT</h2>
+</a>
+{% endblock %}

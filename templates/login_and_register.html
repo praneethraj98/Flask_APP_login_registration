@@ -1,0 +1,33 @@
+{% extends "base_layout.html"%}
+{% block content %}
+<div class="container p-5 d-flex ">
+    <div class="m-5 border p-5">
+        <h1 class="p-5">Login</h1>
+        <form method="POST">
+            <div class="form-group ">
+                <label class="h3">Name</label>
+                <input type="text" class="form-control" placeholder="Enter name" name="name">
+            </div>
+            <div class="form-group">
+                <label class="h3">Password</label>
+                <input type="password" class="form-control " placeholder="Enter password" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="m-5 border p-5">
+        <h1 class="p-5">Register</h1>
+        <form method="POST">
+            <div class="form-group ">
+                <label class="h3">Name</label>
+                <input type="text" class="form-control" placeholder="Enter name" name="rname">
+            </div>
+            <div class="form-group">
+                <label class="h3">Password</label>
+                <input type="password" class="form-control " placeholder="Enter password" name="rpassword">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

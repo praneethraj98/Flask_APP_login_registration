@@ -1,0 +1,7 @@
+{% extends "base_layout.html"%}
+{% block content %}
+<h1 class="text-center p-5 m-5">Welcome to your homepage</h1>
+<a href="{{ url_for('registerOrLogin') }}">
+   <h2 class=".text-white text-center">Click here to go to Login/Register page</h2>
+</a>
+{% endblock %}
